@@ -1,9 +1,7 @@
 from vectorstore import init_vectorstore, load_vector_from_local
 from chain import build_report_chain
 
-init_vectorstore()
-
-vectorstore = load_vector_from_local()
+vectorstore = init_vectorstore()
 chain = build_report_chain(vectorstore=vectorstore)
 
 q1 = "Tool Choice 에러에 대한 리포트 작성"
